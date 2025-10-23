@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void bai8_VeHinhSo() {
+void bai8() {
     int n;
     printf("--- Bai 8: Ve hinh tam giac so ---\n");
     printf("Moi nhap chieu cao n (vd: 5): ");
@@ -18,6 +18,7 @@ void bai8_VeHinhSo() {
 }
 
 int main() {
-    bai8_VeHinhSo();
+    bai8();
     return 0;
 }
+
