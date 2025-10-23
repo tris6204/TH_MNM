@@ -20,11 +20,9 @@ int main(void) {
     int n, m;
     printf("Nhap so bang cuu chuong can in (n): ");
     if (scanf("%d", &n) != 1) return 0;
-
-    /* Tuỳ de ban muon in toi 10 hay toi m (m có thể nhap) */
     printf("Muon in toi 10 hay toi bao nhieu (nhap m, e.g. 10): ");
     if (scanf("%d", &m) != 1) m = 10;
-
     print_tables_up_to(n, m);
     return 0;
 }
+
