@@ -7,19 +7,19 @@ void in_bang_cuu_chuong(int so, int gioi_han) {
 }
 void in_cac_bang(int n, int gioi_han) {
     if (n <= 0) {
-        printf("Giá trị n phải là số nguyên dương.\n");
+        printf("gia tri n phai la so nguyen duong");
         return;
     }
     for (int i = 1; i <= n; ++i) {
-        printf("\nBẢNG CỬU CHƯƠNG %d:\n", i);
+        printf("Bang cuu chuong %d:\n", i);
         in_bang_cuu_chuong(i, gioi_han);
     }
 }
 int main(void) {
     int n, m;
-    printf("Nhập số bảng cửu chương cần in (n): ");
+    printf("Nhap so ban cuu chuonng can in (n): ");
     if (scanf("%d", &n) != 1) return 0;
-    printf("Muốn in tới bao nhiêu (ví dụ 10): ");
+    printf("Muon in toi bao nhieu (vi du 10): ");
     if (scanf("%d", &m) != 1) m = 10;
 
     in_cac_bang(n, m);
