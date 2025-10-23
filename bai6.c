@@ -1,28 +1,27 @@
 #include <stdio.h>
-void print_table_of(int x, int max_multiplier) {
-    if (x <= 0 || max_multiplier <= 0) return;
-    for (int j = 1; j <= max_multiplier; ++j) {
-        printf("%d x %d = %d\n", x, j, x * j);
+void in_bang_cuu_chuong(int so, int gioi_han) {
+    if (so <= 0 || gioi_han <= 0) return;
+    for (int i = 1; i <= gioi_han; ++i) {
+        printf("%d x %d = %d\n", so, i, so * i);
     }
 }
-void print_tables_up_to(int n, int max_multiplier) {
+void in_cac_bang(int n, int gioi_han) {
     if (n <= 0) {
-        printf("Gia tri n phai la so nguyen duong.\n");
+        printf("Giá trị n phải là số nguyên dương.\n");
         return;
     }
     for (int i = 1; i <= n; ++i) {
-        printf("Bang cuu chuong %d:\n", i);
-        print_table_of(i, max_multiplier);
-        printf("\n");
+        printf("\nBẢNG CỬU CHƯƠNG %d:\n", i);
+        in_bang_cuu_chuong(i, gioi_han);
     }
 }
 int main(void) {
     int n, m;
-    printf("Nhap so bang cuu chuong can in (n): ");
+    printf("Nhập số bảng cửu chương cần in (n): ");
     if (scanf("%d", &n) != 1) return 0;
-    printf("Muon in toi 10 hay toi bao nhieu (nhap m, e.g. 10): ");
+    printf("Muốn in tới bao nhiêu (ví dụ 10): ");
     if (scanf("%d", &m) != 1) m = 10;
-    print_tables_up_to(n, m);
+
+    in_cac_bang(n, m);
     return 0;
 }
-
